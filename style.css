@@ -1,0 +1,28 @@
+/* CSS externo */
+
+:root,
+:root[data-theme='dark'] {
+    --cor-fundo: #121212;
+    /* Fundo escuro */
+    --cor-texto: #e0e0e0;
+    /* Texto claro */
+    --menu-link: #bb86fc;
+    /* Links em tom lilás */
+    --menu-destaque: #3700b3;
+    /* Destaque no menu */
+    --cor-borda: #333333;
+    /* Cor da borda no escuro */
+}
+
+:root[data-theme='light'] {
+    --cor-fundo: #f4f4f4;
+    /* Fundo claro */
+    --cor-texto: #121212;
+    /* Texto escuro */
+    --menu-link: #661dce;
+    /* Links em tom roxo */
+    --menu-destaque: #3700b3;
+    /* Destaque no menu */
+    --cor-borda: #cccccc;
+    /* Cor da borda no claro */
+}
