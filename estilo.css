@@ -10,6 +10,8 @@
     --tamanho-fonte-base: 1.15rem; /* Acessibilidade para 40+ */
 }
 
+
+
 /* Reset Básico e Fontes */
 * {
     margin: 0;
@@ -114,6 +116,8 @@ HEADER/NAVEGAÇÃO FIXA E LOGO
     border-bottom: 2px solid var(--golden);
 }
 
+
+
 /* BOTÕES */
 .btn {
     padding: 20px 25px;
@@ -142,6 +146,7 @@ HEADER/NAVEGAÇÃO FIXA E LOGO
 .btn-golden:hover {
     background-color: #e6c100;
 }
+
 
 /* ---------------------------------
 SEÇÕES DE CONTEÚDO E ANIMAÇÕES

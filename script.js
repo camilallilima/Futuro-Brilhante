@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    
+
     // ---------------------------------
     // 2. CARROSSEL FUNCIONAL BÁSICO
     // ---------------------------------
@@ -34,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.querySelector('.carousel-button.next');
     const prevButton = document.querySelector('.carousel-button.prev');
     let slideIndex = 0;
+    
+    
 
     // Função para calcular a largura de um slide
     const getSlideWidth = () => slides[0] ? slides[0].getBoundingClientRect().width : 0;
@@ -55,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    
     // Inicializa a posição dos slides
     setSlidePositions();
 
@@ -107,3 +112,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
