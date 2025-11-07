@@ -10,8 +10,6 @@
     --tamanho-fonte-base: 1.15rem; /* Acessibilidade para 40+ */
 }
 
-
-
 /* Reset Básico e Fontes */
 * {
     margin: 0;
@@ -497,6 +495,18 @@ DEPOIMENTOS
     border-radius: 5px;
     font-style: italic;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+/* --- Rodapé --- */
+.rodape {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed; /* Fixa na parte de baixo da tela */
+    bottom: 0;
+    width: 100%;
 }
 
 /* ---------------------------------

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Simples</title>
+    <link rel="stylesheet" href="avaliação.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="link-principal">Voltar ao Site Principal 🏠</a>
+        <h1>Minha Avaliação Simples! 🌟</h1>
+    </header>
+
+    <main class="conteudo">
+        <form action="#" method="POST" class="formulario">
+            <fieldset class="secao-info">
+                <fieldset class="secao-conhecimento">
+                    <legend>Teste Seus Conhecimentos! 🧠</legend>
+
+                    <main class="conteudo">
+        <form action="#" method="POST" class="formulario">
+            <fieldset class="secao-info">
+                <legend>Sua Identificação (Opcional)</legend>
+                <div class="campo">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </div>
+            </fieldset>
+            
+          
+                <legend>Escreva a Resposta Certa!</legend>
+
+                <div class="pergunta">
+                    <label for="conhecimento1">1. Qual é a capital do Brasil?</label>
+                    <input type="text" id="conhecimento1" name="conhecimento1" placeholder="Escreva o nome da cidade" required>
+                </div>
+
+                <div class="pergunta">
+                    <label for="conhecimento2">2. Qual é a cor principal do Sol que vemos no céu?</label>
+                    <input type="text" id="conhecimento2" name="conhecimento2" placeholder="Escreva a cor" required>
+                </div>
+
+                <div class="pergunta">
+                    <label for="conhecimento3">3. Qual animal faz o som de "miau"?</label>
+                    <input type="text" id="conhecimento3" name="conhecimento3" placeholder="Escreva o nome do animal" required>
+                </div>
+
+                <div class="pergunta">
+                    <label for="conhecimento4">4. Se você tem 5 balas e come 2, quantas balas sobraram? (Escreva o número)</label>
+                    <input type="number" id="conhecimento4" name="conhecimento4" placeholder="Escreva o número 3" required>
+                </div>
+
+                <div class="pergunta">
+                    <label for="conhecimento5">5. Qual é a parte do corpo que usamos para CHUTAR a bola?</label>
+                    <input type="text" id="conhecimento5" name="conhecimento5" placeholder="Escreva a parte do corpo" required>
+                </div>
+
+                <div class="pergunta">
+                    <label for="conhecimento6">6. De onde vem a água que a gente BEBE? (Escreva a fonte)</label>
+                    <input type="text" id="conhecimento6" name="conhecimento6" placeholder="Ex: rio, chuva" required>
+                </div>
+
+                <div class="pergunta">
+                    <label for="conhecimento7">7. Quantos dias tem uma semana completa? (Escreva o número)</label>
+                    <input type="number" id="conhecimento7" name="conhecimento7" placeholder="Escreva o número 7" required>
+                </div>
+                
+                <div class="pergunta">
+                    <label for="conhecimento8">8. Se você pudesse desenhar o seu animal favorito, qual seria? Escreva o nome dele e porquê ele é o favorito:</label>
+                    <textarea id="conhecimento8" name="conhecimento8" rows="3" placeholder="Escreva o nome e o motivo..." required></textarea>
+                </div>
+
+            
+
+                    <div class="pergunta">
+                        <p>1. Qual é a capital do Brasil?</p>
+                        <div class="opcoes-radio">
+                            <input type="radio" id="c1-a" name="conhecimento1" value="a">
+                            <label for="c1-a">São Paulo</label><br>
+
+                            <input type="radio" id="c1-b" name="conhecimento1" value="b" required>
+                            <label for="c1-b">Brasília</label><br>
+
+                            <input type="radio" id="c1-c" name="conhecimento1" value="c">
+                            <label for="c1-c">Rio de Janeiro</label>
+                        </div>
+                    </div>
+
+                    <div class="pergunta">
+                        <p>2. Qual é a cor principal do Sol que vemos no céu?</p>
+                        <div class="opcoes-radio">
+                            <input type="radio" id="c2-a" name="conhecimento2" value="a">
+                            <label for="c2-a">Verde</label><br>
+
+                            <input type="radio" id="c2-b" name="conhecimento2" value="b" required>
+                            <label for="c2-b">Amarelo/Branco</label><br>
+
+                            <input type="radio" id="c2-c" name="conhecimento2" value="c">
+                            <label for="c2-c">Roxo</label>
+                        </div>
+                    </div>
+
+                    <div class="pergunta">
+                        <p>3. Qual animal aparece na bandeira de Portugal?</p>
+                        <div class="opcoes-radio">
+                            <input type="radio" id="c3-a" name="conhecimento3" value="a">
+                            <label for="c3-a">Nenhum animal</label><br>
+
+                            <input type="radio" id="c3-b" name="conhecimento3" value="b" required>
+                            <label for="c3-b">Não há animal</label><br>
+
+                            <input type="radio" id="c3-c" name="conhecimento3" value="c">
+                            <label for="c3-c">Leão</label>
+                        </div>
+                    </div>
+
+                    <div class="pergunta">
+                        <p>5. Qual animal faz o som de 'miau'?</p>
+                        <div class="opcoes-radio">
+                            <input type="radio" id="c5-a" name="conhecimento5" value="a" required>
+                            <label for="c5-a">Gato (Correta)</label><br>
+
+                            <input type="radio" id="c5-b" name="conhecimento5" value="b">
+                            <label for="c5-b">Cachorro</label><br>
+
+                            <input type="radio" id="c5-c" name="conhecimento5" value="c">
+                            <label for="c5-c">Vaca</label>
+                        </div>
+                    </div>
+
+                    <div class="pergunta">
+                        <p>6. De que cor é uma banana madura?</p>
+                        <div class="opcoes-radio">
+                            <input type="radio" id="c6-a" name="conhecimento6" value="a">
+                            <label for="c6-a">Vermelha</label><br>
+
+                            <input type="radio" id="c6-b" name="conhecimento6" value="b" required>
+                            <label for="c6-b">Amarela (Correta)</label><br>
+
+                            <input type="radio" id="c6-c" name="conhecimento6" value="c">
+                            <label for="c6-c">Azul</label>
+                        </div>
+                    </div>
+
+                    <div class="pergunta">
+                        <p>7. Quantos dias tem uma semana completa?</p>
+                        <div class="opcoes-radio">
+                            <input type="radio" id="c7-a" name="conhecimento7" value="a">
+                            <label for="c7-a">Cinco (5)</label><br>
+
+                            <input type="radio" id="c7-b" name="conhecimento7" value="b">
+                            <label for="c7-b">Dez (10)</label><br>
+
+                            <input type="radio" id="c7-c" name="conhecimento7" value="c" required>
+                            <label for="c7-c">Sete (7) (Correta)</label>
+                        </div>
+                    </div>
+
+                    <div class="pergunta">
+                        <p>4. Se você tem 5 balas e come 2, quantas balas sobraram?</p>
+                        <input type="number" id="c4-resposta" name="conhecimento4" min="0" max="100" class="input-nota"
+                            placeholder="Digite o número" required>
+                    </div>
+
+                    <div class="pergunta">
+                <p>8. Qual é a parte do corpo que usamos para CHUTAR a bola?</p>
+                <div class="opcoes-radio">
+                    <input type="radio" id="c8-a" name="conhecimento8" value="a">
+                    <label for="c8-a">Mão</label><br>
+
+                    <input type="radio" id="c8-b" name="conhecimento8" value="b" required>
+                    <label for="c8-b">Pé (Correta)</label><br>
+                    
+                    <input type="radio" id="c8-c" name="conhecimento8" value="c">
+                    <label for="c8-c">Orelha</label>
+                </div>
+            </div>
+
+            <div class="pergunta">
+                <p>9. De onde vem a água que a gente BEBE?</p>
+                <div class="opcoes-radio">
+                    <input type="radio" id="c9-a" name="conhecimento9" value="a" required>
+                    <label for="c9-a">Do Rio ou da Chuva (Correta)</label><br>
+
+                    <input type="radio" id="c9-b" name="conhecimento9" value="b">
+                    <label for="c9-b">Do Fogo</label><br>
+                    
+                    <input type="radio" id="c9-c" name="conhecimento9" value="c">
+                    <label for="c9-c">Da Pedra</label>
+                </div>
+            </div>
+
+            <div class="pergunta">
+                <p>10. Em que MÊS a gente comemora o Natal?</p>
+                <div class="opcoes-radio">
+                    <input type="radio" id="c10-a" name="conhecimento10" value="a">
+                    <label for="c10-a">Março</label><br>
+
+                    <input type="radio" id="c10-b" name="conhecimento10" value="b">
+                    <label for="c10-b">Julho</label><br>
+                    
+                    <input type="radio" id="c10-c" name="conhecimento10" value="c" required>
+                    <label for="c10-c">Dezembro (Correta)</label>
+                </div>
+            </div>
+
+                </fieldset>
+
+                <button type="submit" class="botao-enviar">Enviar Avaliação</button>
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <p>Criado para iniciantes.</p>
+        <a href="index.html" class="link-principal-rodape">Voltar para o Início</a>
+    </footer>
+</body>
+
+</html>

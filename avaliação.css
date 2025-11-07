@@ -1,0 +1,136 @@
+/* Definições Gerais - Fundo e Fonte */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0E68C; /* Amarelo Claro (Khaki) */
+    color: #00008B; /* Azul Escuro (DarkBlue) */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo do Cabeçalho */
+.cabecalho {
+    background-color: #0000FF; /* Azul Brilhante */
+    color: #FFFF00; /* Amarelo Puro */
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* NOVO Estilo do Link de Retorno no Cabeçalho */
+.link-principal {
+    color: #FFFF00; /* Amarelo */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    display: block; /* Ocupa a própria linha */
+    padding-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.link-principal:hover {
+    color: #FFA500; /* Laranja (destaque no hover) */
+}
+
+/* Estilo do Formulário Principal */
+.formulario {
+    background-color: #FFFFFF; /* Fundo Branco para destaque */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px; /* Limita a largura para melhor leitura */
+    margin-bottom: 20px;
+}
+
+/* Estilo das Seções (fieldset) */
+fieldset {
+    border: 2px solid #0000FF; /* Borda Azul */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    color: #0000FF; /* Texto da legenda Azul */
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Estilo dos Campos de Input e Labels */
+.campo, .pergunta {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Garante que a label fique em sua própria linha */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], .input-nota, textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #00008B;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+/* Estilo específico para as opções de rádio (Sim/Não) e Checkbox */
+.opcoes-radio label, .opcoes-checkbox label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+.opcoes-checkbox label {
+    display: inline; /* Faz com que as labels fiquem na mesma linha do checkbox */
+}
+
+/* Estilo do Botão de Envio */
+.botao-enviar {
+    background-color: #FFD700; /* Amarelo Ouro */
+    color: #00008B; /* Texto Azul Escuro */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.botao-enviar:hover {
+    background-color: #FFFF00; /* Amarelo Puro no hover */
+}
+
+/* Estilo do Rodapé */
+.rodape {
+    background-color: #00008B; /* Fundo Azul Escuro */
+    color: #FFFFFF; /* Texto Branco */
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* NOVO Estilo do Link de Retorno no Rodapé */
+.link-principal-rodape {
+    color: #FFD700; /* Amarelo Ouro */
+    text-decoration: underline;
+    margin-top: 5px;
+    display: block;
+    font-size: 0.9em;
+}
+
+.link-principal-rodape:hover {
+    color: #FFFFFF; /* Branco no hover */
+}
