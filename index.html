@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="estilo.css">
 
+   <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -19,7 +23,7 @@
         <!-- LOGO -->
         <nav class="container nav-bar">
             <a href="" class="logo-link" id="logo-link">
-                <span class="logo-fb">FB</span> Futuro Brilhante
+                <img src="img/logo.png" width="60" alt=""> Futuro Brilhante
             </a>
             <!-- BARRA DE NAVEGAÇÃO -->
             <ul class="nav-links">
@@ -51,21 +55,24 @@
                             <p>Identifique seus pontos fortes e dificuldades em minutos para um plano sob medida.</p>
                             <a href="avaliação.html" class="btn btn-golden">Quero Avaliar Agora!</a>
                         </div>
+
                         <div class="carousel-slide">
                             <h3><i class="fas fa-gamepad"></i> Atividades Personalizadas</h3>
                             <p>Jogos, músicas e textos adaptados (Digital e para Imprimir).</p>
                         </div>
+
                         <div class="carousel-slide">
                             <h3><i class="fas fa-location"></i> Localizações </h3>
                             <p>Encontre locais físicos perto e você que atenda nosso módulo.</p>
-
-                        </div>
-
-                        <div class="carousel-slide">
-                            <h3><i class="fas fa-heart"></i> Suporte Sócio-Emocional</h3>
-                            <p>Módulos exclusivos para trabalhar emoções, ansiedade e confiança.</p>
+                            <div class="mapa">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.5872146251427!2d-46.65298242454168!3d-23.690715466357478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4514bf3069e9%3A0x1a780930737fd84c!2sAfesu%20Veleiros!5e0!3m2!1spt-BR!2sbr!4v1762881428942!5m2!1spt-BR!2sbr"
+                                    width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
+
                     <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
                     <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
 
@@ -94,17 +101,22 @@
 
                     <div class="galeria-escolas">
                         <div class="escola-item">
-                            <img src="img/emef..jpg" alt="Foto da Escola Parceira 1" class="img-escola">
-                            <h4>EMEF Deputado João Sussumu Hirata</h4>
+                            <a href="https://maps.app.goo.gl/LfsKfENmCqGXpAya8" target="_blank">
+                                <img src="img/emef..jpg" alt="Foto da Escola Parceira 1" class="img-escola">
+                                <h4>EMEF Deputado João Sussumu Hirata</h4>
+                            </a>
                         </div>
                         <div class="escola-item">
-                            <img src="img/CEU.1.jpg" alt="Foto da Escola Parceira 2" class="img-escola">
-                            <h4>CEU Alvarenga</h4>
+                            <a href="https://maps.app.goo.gl/Vkqw4bBGK856jKY76" target="_blank">
+                                <img src="img/CEU.1.jpg" alt="Foto da Escola Parceira 2" class="img-escola">
+                                <h4>CEU Alvarenga</h4>
+                            </a>
                         </div>
                         <div class="escola-item">
-                            <img src="https://via.placeholder.com/300x220/002266/FFFFFF?text=Centro+de+Apoio+%C3%A0+Fam%C3%ADlia+C"
-                                alt="Foto da Escola Parceira 3" class="img-escola">
-                            <h4>Centro de Apoio Social</h4>
+                            <a href="https://maps.app.goo.gl/f29Nb7VFFqkezR4i7" target="_blank">
+                                <img src="img/escola7.png" alt="Foto da Escola Parceira 3" class="img-escola">
+                                <h4>EMEF José Cavalcanti Silva Desemb</h4>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +176,7 @@
                 <div class="card pdf-card">
                     <h3 class="card-title">Guia para Iniciantes na Leitura</h3>
                     <p class="card-details">24 páginas • 1.2k downloads</p>
-                    <a href="pdfs/guia-iniciantes.pdf" class="btn btn-primary pdf-btn" download>
+                    <a href="pdfs/Leitura para Iniciantes.pdf" class="btn btn-primary pdf-btn" download>
                         <i class="icon">⬇️</i> Baixar PDF
                     </a>
                 </div>
@@ -172,7 +184,8 @@
                 <div class="card pdf-card">
                     <h3 class="card-title">Exercícios de Escrita - Nível 1</h3>
                     <p class="card-details">18 páginas • 980 downloads</p>
-                    <a href="pdfs/guia-iniciantes.pdf" class="btn btn-primary pdf-btn" download>
+                    <a href="https://docs.google.com/document/d/1SNP_8K3Gxq_I1t2nSavIh6HWztnc9coTjMpndJkQVe0/edit?usp=sharing"
+                        class="btn btn-primary pdf-btn" download>
                         <i class="icon">⬇️</i> Baixar PDF
                     </a>
                 </div>
@@ -201,28 +214,31 @@
                     <h3 class="card-title">Como Começar a Ler - Primeiros Passos</h3>
                     <p class="card-details">19:50 min • 322 mil visualizações</p>
                     <a href="https://www.youtube.com/watch?v=jv8smUNINec&list=PL-8ae7-gBcRdMVczkqmnyWM4_Wlo3kbMs&t=5s"
-                        class="btn btn-secondary video-btn">
+                        class="btn btn-secondary video-btn" target="_blank">
                         <i class="icon">▶️</i> Assistir
                     </a>
                 </div>
                 <div class="card video-card">
                     <h3 class="card-title">Técnicas de Memorização de Palavras</h3>
                     <p class="card-details">4:04 min • 296 mil visualizações</p>
-                    <a href="https://www.youtube.com/watch?v=Fm3gvxkIfrg" class="btn btn-secondary video-btn">
+                    <a href="https://www.youtube.com/watch?v=Fm3gvxkIfrg" class="btn btn-secondary video-btn"
+                        target="_blank">
                         <i class="icon">▶️</i> Assistir
                     </a>
                 </div>
                 <div class="card video-card">
                     <h3 class="card-title">Exercícios de Leitura em Grupo</h3>
                     <p class="card-details">17:41 min • 49 mil visualizações</p>
-                    <a href="https://www.youtube.com/watch?v=oIDF5m3A8zU" class="btn btn-secondary video-btn">
+                    <a href="https://www.youtube.com/watch?v=oIDF5m3A8zU" class="btn btn-secondary video-btn"
+                        target="_blank">
                         <i class="icon">▶️</i> Assistir
                     </a>
                 </div>
                 <div class="card video-card">
                     <h3 class="card-title">Superando o Medo de Ler em Público</h3>
                     <p class="card-details">12:53 min • 13 mil visualizações</p>
-                    <a href="https://www.youtube.com/watch?v=5jdJUjCMRMQ" class="btn btn-secondary video-btn">
+                    <a href="https://www.youtube.com/watch?v=5jdJUjCMRMQ" class="btn btn-secondary video-btn"
+                        target="_blank">
                         <i class="icon">▶️</i> Assistir
                     </a>
                 </div>
@@ -236,21 +252,21 @@
                 <div class="card audio-card">
                     <h3 class="card-title">Histórias Narradas - Nível Iniciante</h3>
                     <p class="card-details">25 min • 2.1k ouvintes</p>
-                    <a href="#" class="btn btn-tertiary audio-btn">
+                    <a href="#" class="btn btn-tertiary audio-btn" target="_blank">
                         <i class="icon">🔊</i> Ouvir
                     </a>
                 </div>
                 <div class="card audio-card">
                     <h3 class="card-title">Exercícios de Pronúncia</h3>
                     <p class="card-details">10 min • 1.8k ouvintes</p>
-                    <a href="#" class="btn btn-tertiary audio-btn">
+                    <a href="#" class="btn btn-tertiary audio-btn" target="_blank">
                         <i class="icon">🔊</i> Ouvir
                     </a>
                 </div>
                 <div class="card audio-card">
                     <h3 class="card-title">Contos Brasileiros para Adultos</h3>
                     <p class="card-details">30 min • 3.5k ouvintes</p>
-                    <a href="#" class="btn btn-tertiary audio-btn">
+                    <a href="#" class="btn btn-tertiary audio-btn" target="_blank">
                         <i class="icon">🔊</i> Ouvir
                     </a>
                 </div>
@@ -258,7 +274,7 @@
                     <a href="exibir_pdf.html"></a>
                     <h3 class="card-title">Dicas Semanais de Leitura</h3>
                     <p class="card-details">8 min • 1.2k ouvintes</p>
-                    <a href="#" class="btn btn-tertiary audio-btn">
+                    <a href="#" class="btn btn-tertiary audio-btn" target="_blank">
                         <i class="icon">🔊</i> Ouvir
                     </a>
                 </div>
@@ -448,43 +464,56 @@
                 </form>
             </div>
 
-            <footer style="background-color: #001F54; color: white; padding: 40px 0;">
-                <div class="container" style="text-align: center;">
-                    <h3 style="color: #FFD700; margin-bottom: 15px;">Conecte-se com o Futuro Brilhante</h3>
-                    <div class="social-icons" style="margin-bottom: 20px;">
-                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/futuro.brilhantefb?igsh=eTFleGk1a3M0YTEww" target="_blank"
-                            rel="noopener" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://chat.whatsapp.com/HD1W0XWskPw5gOCrKjyPYl?mode=wwt" target="_blank"
-                            rel="noopener" class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-
-                    <p style="font-size: 0.9rem; margin-bottom: 10px;">
-                        &copy; 2025 Futuro Brilhante. Todos os direitos reservados.
-                    </p>
-                    <p style="font-size: 0.85rem;">
-                        <a href="#" style="color: #C8A2C8;">Política de Privacidade</a> |
-                        <a href="#" style="color: #C8A2C8;">Ajuda</a>
-                    </p>
-                </div>
+            <!-- Rodapé 1 -->
+            <p style="font-size: 0.9rem; margin-bottom: 10px;">
+                &copy; 2025 Futuro Brilhante. Todos os direitos reservados.
+            </p>
+            <p style="font-size: 0.85rem;">
+                <a href="#" style="color: #C8A2C8;">Política de Privacidade</a> |
+                <a href="#" style="color: #C8A2C8;">Ajuda</a>
+            </p>
+            </div>
             </footer>
 
+            <!-- FIM Rodapé 1 -->
+
+            
+            <ul class="menu redes-sociais">
+                <li>
+                    <a href="https://github.com/MaryMS25" class="menu-link" target="_blank">
+
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/marihzsx1?igsh=MWQwN20zY2UzeGd3Zg==" class="menu-link"
+                        target="_blank">
+
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://web.whatsapp.com/" class="menu-link" target="_blank">
+
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://web.facebook.com/" class="menu-link" target="_blank">
+
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+            </ul>
 
 
     </main>
 
-    <!-- FIM CONTATO -->
 
-    <!-- RODAPÉ -->
+    <!-- RODAPÉ 2 -->
     <footer class="rodape">
         <p>&copy; 2025 Futuro Brilhante. Todos os direitos reservados.
     </footer>
