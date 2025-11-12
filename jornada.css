@@ -13,8 +13,8 @@
 }
 
 body {
-    background-color: #90e0ef; /* Fundo azul bem clarinho */
-    color: #0077b6; /* Cor principal do texto: Azul Escuro */
+    background-color:#0A1C49; /* Fundo azul bem clarinho */
+    color: #036aa2; /* Cor principal do texto: Azul Escuro */
     line-height: 1.6;
     padding-bottom: 50px; 
 }
@@ -25,7 +25,7 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #ffc300;
+    border-bottom: 5px solid #FFA500;
 }
 
 /* --- Seções e Cards (Containers de Conteúdo) --- */
@@ -37,7 +37,7 @@ section {
 }
 
 section h2 {
-    color: #ffc300; 
+    color: #f9d970; 
     font-size: 1.8em;
     margin-bottom: 20px;
 }
@@ -109,7 +109,7 @@ input[type="password"]:focus {
 }
 
 .link-amarelo {
-    color: #ffc300; /* Link em amarelo */
+    color: #2f2f2f; /* Link em amarelo */
     text-decoration: none;
     font-weight: bold;
 }
@@ -129,7 +129,7 @@ input[type="password"]:focus {
 
 /* Estilo do botão Amarelo */
 .botao-amarelo {
-    background-color: #ffc300;
+    background-color: #dfc043;
     color: #0077b6;
 }
 
@@ -154,16 +154,17 @@ input[type="password"]:focus {
 }
 
 .botao-retorno {
-    background-color: #ffc300;
-    color: #0077b6;
+    background-color: #6e90e6;
+    color: #ffffff; 
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 3px solid #0077b6; 
+    border: 3px solid #005a8b; 
 }
 
 .botao-retorno:hover {
-    background-color: #ffda66;
-    border-color: #005a8b;
+    background-color: #c59eef;  
+    color: #1b1b1b;
+    border-color: #2e0048;
 }
 
 .mensagem-final {
