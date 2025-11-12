@@ -509,6 +509,25 @@ DEPOIMENTOS
     width: 100%;
 }
 
+/* Redes Sociais */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.redes-sociais {
+    list-style: none;
+}
+
+.redes-sociais i {
+    color: var(--borda-clara);
+    font-size: 1.5rem;
+}
+
+
 /* ---------------------------------
 RESPONSIVIDADE (Mobile)
 --------------------------------- */
