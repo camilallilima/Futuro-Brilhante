@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="estilo.css">
 
-   <!-- Bootstrap Icons -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 
@@ -18,15 +18,17 @@
 </head>
 
 <body>
-
     <header id="header">
-        <!-- LOGO -->
         <nav class="container nav-bar">
             <a href="" class="logo-link" id="logo-link">
                 <img src="img/logo.png" width="60" alt=""> Futuro Brilhante
             </a>
-            <!-- BARRA DE NAVEGAÇÃO -->
-            <ul class="nav-links">
+
+            <button class="menu-mobile-toggle" id="menu-mobile-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links-menu">
                 <li><a href="#home" class="nav-item">Início</a></li>
                 <li><a href="#sobre" class="nav-item">Sobre Nós</a></li>
                 <li><a href="#funciona" class="nav-item">Como Funciona</a></li>
@@ -36,7 +38,6 @@
                 <li><a href="#contato" class="nav-item">Contato</a></li>
             </ul>
 
-            <a href="#" class="btn btn-primary">Acessar App</a>
         </nav>
     </header>
 
@@ -46,13 +47,15 @@
         <section id="home" class="hero-section content-section visible">
             <div class="container">
                 <h1>Futuro Brilhante: Seu apoio gratuito na leitura e escrita.</h1>
-                <p>Método personalizado e divertido para adultos e idosos (40+). Totalmente acessível e gratuito.</p>
+                <p>Método personalizado e divertido para adultos e idosos (40+). Totalmente acessível e gratuito.
+                </p>
 
                 <div class="carousel-container">
                     <div class="carousel-track">
                         <div class="carousel-slide">
                             <h3><i class="fas fa-search"></i> Avaliação Inicial Gratuita</h3>
-                            <p>Identifique seus pontos fortes e dificuldades em minutos para um plano sob medida.</p>
+                            <p>Identifique seus pontos fortes e dificuldades em minutos para um plano sob medida.
+                            </p>
                             <a href="avaliação.html" class="btn btn-golden">Quero Avaliar Agora!</a>
                         </div>
 
@@ -164,8 +167,10 @@
         <section id="materiais" class="content-section">
             <div class="container">
                 <h2>Materiais para Seu Aprendizado</h2>
-                <p style="text-align: center;">Acesse gratuitamente nossos materiais educativos: PDFs para impressão,
-                    vídeos com legendas, áudios narrados e muito mais. Tudo pensado para facilitar seu aprendizado.</p>
+                <p style="text-align: center;">Acesse gratuitamente nossos materiais educativos: PDFs para
+                    impressão,
+                    vídeos com legendas, áudios narrados e muito mais. Tudo pensado para facilitar seu aprendizado.
+                </p>
             </div>
         </section>
 
@@ -175,7 +180,7 @@
             <div class="cards-grid">
                 <div class="card pdf-card">
                     <h3 class="card-title">Guia para Iniciantes na Leitura</h3>
-                    <p class="card-details">24 páginas • 1.2k downloads</p>
+                    <p class="card-details">3 páginas • 1.565 KB</p>
                     <a href="pdfs/Leitura para Iniciantes.pdf" class="btn btn-primary pdf-btn" download>
                         <i class="icon">⬇️</i> Baixar PDF
                     </a>
@@ -183,23 +188,23 @@
 
                 <div class="card pdf-card">
                     <h3 class="card-title">Exercícios de Escrita - Nível 1</h3>
-                    <p class="card-details">18 páginas • 980 downloads</p>
-                    <a href="https://docs.google.com/document/d/1SNP_8K3Gxq_I1t2nSavIh6HWztnc9coTjMpndJkQVe0/edit?usp=sharing"
+                    <p class="card-details">6 páginas • 183 KB</p>
+                    <a href="pdfs/Exercicios de escrita Nivel 1.pdf"
                         class="btn btn-primary pdf-btn" download>
                         <i class="icon">⬇️</i> Baixar PDF
                     </a>
                 </div>
                 <div class="card pdf-card">
                     <h3 class="card-title">Alfabeto Ilustrado para Adultos</h3>
-                    <p class="card-details">12 páginas • 1.5k downloads</p>
-                    <a href="pdfs/guia-iniciantes.pdf" class="btn btn-primary pdf-btn" download>
+                    <p class="card-details">5 páginas • 185 KB</p>
+                    <a href="pdfs/Alfabeto para Adultos.pdf" class="btn btn-primary pdf-btn" download>
                         <i class="icon">⬇️</i> Baixar PDF
                     </a>
                 </div>
                 <div class="card pdf-card">
                     <h3 class="card-title">Dicas para Familiares e Cuidadores</h3>
-                    <p class="card-details">16 páginas • 750 downloads</p>
-                    <a href="pdfs/guia-iniciantes.pdf" class="btn btn-primary pdf-btn" download>
+                    <p class="card-details">2 páginas • 133 KB</p>
+                    <a href="pdfs/Dicas para Familiares e Cuidadores.pdf" class="btn btn-primary pdf-btn" download>
                         <i class="icon">⬇️</i> Baixar PDF
                     </a>
                 </div>
@@ -315,8 +320,10 @@
                         <p style="font-size: 0.9rem; margin: 0;">Conquistou o Certificado Básico!</p>
                     </div>
                 </div>
-                <p style="margin-top: 15px;">🥳 Eu tinha vergonha de pedir ajuda pra ler as placas novas no trabalho.
-                    Depois de fazer as atividades do Futuro Brilhante, comecei a reconhecer as palavras sozinho. Agora
+                <p style="margin-top: 15px;">🥳 Eu tinha vergonha de pedir ajuda pra ler as placas novas no
+                    trabalho.
+                    Depois de fazer as atividades do Futuro Brilhante, comecei a reconhecer as palavras sozinho.
+                    Agora
                     leio as placas, mensagens no celular e até livros pequenos. A confiança voltou
                     #FuturoBrilhante
                 </p>
@@ -336,7 +343,8 @@
                     </div>
                 </div>
                 <p style="margin-top: 15px;">🥳O melhor é poder estudar à noite, depois do serviço. As lições são
-                    simples, e o aplicativo fala junto com a gente. Quando li o nome do meu filho pela primeira vez, me
+                    simples, e o aplicativo fala junto com a gente. Quando li o nome do meu filho pela primeira vez,
+                    me
                     emocionei. É uma vitória que levo pra vida #LeituraParaTodos
                     #FuturoBrilhante
                 </p>
@@ -372,7 +380,8 @@
                 <h2>Histórias que Inspiram</h2>
                 <div class="depoimento-grid">
                     <blockquote class="depoimento-card">
-                        Voltar a estudar me deu coragem de sonhar outra vez. Agora leio histórias para as pessoas que
+                        Voltar a estudar me deu coragem de sonhar outra vez. Agora leio histórias para as pessoas
+                        que
                         cuido e elas se emocionam comigo.”
                         - Helena Gonçalves B.
                     </blockquote>
@@ -383,24 +392,28 @@
                     </blockquote>
 
                     <blockquote class="depoimento-card">
-                        "Aos 65 anos, voltei a estudar. O sistema de impressão é perfeito para mim. Agora leio jornais!"
+                        "Aos 65 anos, voltei a estudar. O sistema de impressão é perfeito para mim. Agora leio
+                        jornais!"
                         - João A.
                     </blockquote>
 
                     <blockquote class="depoimento-card">
-                        “Aprendi a escrever o nome dos meus netos. É simples pra uns, mas pra mim foi o maior presente
+                        “Aprendi a escrever o nome dos meus netos. É simples pra uns, mas pra mim foi o maior
+                        presente
                         da vida.”
                         - Ernesto Cepriano C.
                     </blockquote>
 
                     <blockquote class="depoimento-card">
-                        “Achei que aprender a ler fosse tarde demais pra mim. Hoje leio minhas mensagens sozinha e até
+                        “Achei que aprender a ler fosse tarde demais pra mim. Hoje leio minhas mensagens sozinha e
+                        até
                         comecei um diário. Nunca é tarde para recomeçar!”
                         - Lucia Soares S.
                     </blockquote>
 
                     <blockquote class="depoimento-card">
-                        “Quando comecei, tinha medo até de segurar o caderno. Hoje ensino as letras para meus sobrinhos.
+                        “Quando comecei, tinha medo até de segurar o caderno. Hoje ensino as letras para meus
+                        sobrinhos.
                         Somos todos aprendizes.”
                         - Hisalana Santos.
                     </blockquote>
@@ -420,17 +433,20 @@
                 </details>
                 <details class="faq-item">
                     <summary>Preciso ter computador para usar?</summary>
-                    <p>Não! Você pode acessar pelo celular, tablet ou computador. O site é leve, acessível e adaptado
+                    <p>Não! Você pode acessar pelo celular, tablet ou computador. O site é leve, acessível e
+                        adaptado
                         para telas maiores ou menores.</p>
                 </details>
                 <details class="faq-item">
                     <summary>Quem pode usar o Futuro Brilhante?</summary>
-                    <p>Sim! O conteúdo é pensado para ser simples, visual e com apoio de áudio e imagens, facilitando o
+                    <p>Sim! O conteúdo é pensado para ser simples, visual e com apoio de áudio e imagens,
+                        facilitando o
                         aprendizado passo a passo.</p>
                 </details>
                 <details class="faq-item">
                     <summary>O que encontro no site?</summary>
-                    <p>Avaliações personalizadas, atividades interativas, espaço socioemocional, materiais para imprimir
+                    <p>Avaliações personalizadas, atividades interativas, espaço socioemocional, materiais para
+                        imprimir
                         e um feed social para trocar experiências.</p>
                 </details>
                 <details class="faq-item">
@@ -454,7 +470,8 @@
         <section id="contato" class="content-section" style="background-color: var(--azul-royal); color: white;">
             <div class="container">
                 <h2 style="color: var(--golden);">Fale Conosco</h2>
-                <p style="text-align: center;">Tem dúvidas? Envie uma mensagem. Nossa equipe de apoio está pronta para
+                <p style="text-align: center;">Tem dúvidas? Envie uma mensagem. Nossa equipe de apoio está pronta
+                    para
                     ajudar.</p>
                 <form class="contact-form">
                     <input type="text" placeholder="Seu Nome" required>
@@ -464,19 +481,19 @@
                 </form>
             </div>
 
-            
-            
-            
+
+
+
             </footer>
 
             <!-- FIM Rodapé 1 -->
 
-            
+
             <ul class="menu redes-sociais">
                 <li>
-                    <a href="https://github.com/MaryMS25" class="menu-link" target="_blank">
+                    <a href="https://www.gmail.com/futuro.brilhantefb7gmail.com" class="menu-link" target="_blank">
 
-                        <i class="bi bi-github"></i>
+                        <i class="bi bi-envelope-at"></i>
                     </a>
                 </li>
 
@@ -506,8 +523,7 @@
 
     </main>
 
-
-    <!-- RODAPÉ 2 -->
+    <!-- RODAPÉ  -->
     <footer class="rodape">
         <p>&copy; 2025 Futuro Brilhante. Todos os direitos reservados.
     </footer>

@@ -31,7 +31,6 @@
 
 body {
     font-family: 'Arial', sans-serif; 
-    line-height: 1.4;
     background-color: var(--fundo-claro);
     color: var(--texto-principal);
     font-size: var(--tamanho-fonte-base);
@@ -95,6 +94,7 @@ HEADER/NAVEGAÇÃO FIXA E LOGO
 .nav-links {
     list-style: none;
     display: flex;
+    margin-right: 50px;
 }
 
 .nav-links li {
@@ -114,7 +114,59 @@ HEADER/NAVEGAÇÃO FIXA E LOGO
     border-bottom: 2px solid var(--golden);
 }
 
+/* --- CSS: Regras Iniciais para o Botão Hambúrguer --- */
+.menu-mobile-toggle {
+    display: none; /* Esconde o botão por padrão em desktop */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--azul-royal); /* ou a cor do seu texto */
+    cursor: pointer;
+}
 
+/* --- CSS: Regras de Layout Mobile (ex: abaixo de 768px) --- */
+@media (max-width: 768px) {
+    /* 1. Mostra o botão hambúrguer */
+    .menu-mobile-toggle {
+        display: block;
+    }
+
+    /* 2. Reposiciona o menu de navegação */
+    .nav-bar {
+        justify-content: space-between; /* Ajusta o logo e o botão */
+    }
+
+    /* 3. Estiliza a lista de links para ser um menu de tela cheia/lateral */
+    .nav-links {
+        display: none; /* Esconde a lista por padrão */
+        position: absolute;
+        top: 60px; /* Abaixo do header */
+        left: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column; /* Coloca os links em coluna */
+        background-color: #fff; /* Fundo do menu */
+        box-shadow: 0 8px 16px rgba(248, 32, 32, 0.1);
+        z-index: 100;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    /* 4. Estado Ativo/Aberto do Menu */
+    .nav-links.active {
+        display: flex; /* Mostra o menu quando a classe 'active' estiver presente */
+    }
+    
+}
 
 /* BOTÕES */
 .btn {
@@ -172,7 +224,8 @@ main {
     background: linear-gradient(135deg, var(--azul-royal) 0%, var(--violeta) 100%);
     color: white;
     text-align: center;
-    padding: 120px 0 80px 0;
+    padding: 70px 0 80px 0;
+    margin-top: -22px;
 }
 
 .hero-section h1 {
@@ -504,7 +557,6 @@ DEPOIMENTOS
     color: white;
     text-align: center;
     padding: 15px;
-    position: fixed; /* Fixa na parte de baixo da tela */
     bottom: 0;
     width: 100%;
 }
@@ -531,6 +583,13 @@ DEPOIMENTOS
 /* ---------------------------------
 RESPONSIVIDADE (Mobile)
 --------------------------------- */
+
+@media (max-width: 992px) {
+    .hero-section {
+        margin-top: -30px;
+    } 
+}
+
 @media (max-width: 900px) {
     .nav-links {
         display: none; 
