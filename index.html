@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuro Brilhante - Apoio à Leitura e Escrita</title>
 
-    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -14,30 +16,49 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <link rel="stylesheet" href="estilo.css">
+
 
 </head>
 
 <body>
     <header id="header">
-        <nav class="container nav-bar">
-            <a href="" class="logo-link" id="logo-link">
-                <img src="img/logo.png" width="60" alt=""> Futuro Brilhante
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+
+            <a href="" class="navbar-brand logo-link" id="logo-link">
+                <img src="img/logo.png" width="60" alt="" class="d-inline-block align-top"> Futuro Brilhante
             </a>
 
-            <button class="menu-mobile-toggle" id="menu-mobile-toggle" aria-label="Abrir Menu">
-                <i class="fas fa-bars"></i>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <ul class="nav-links" id="nav-links-menu">
-                <li><a href="#home" class="nav-item">Início</a></li>
-                <li><a href="#sobre" class="nav-item">Sobre Nós</a></li>
-                <li><a href="#funciona" class="nav-item">Como Funciona</a></li>
-                <li><a href="#materiais" class="nav-item">Recursos</a></li>
-                <li><a href="#depoimentos" class="nav-item">Depoimentos</a></li>
-                <li><a href="#faq" class="nav-item">FAQ</a></li>
-                <li><a href="#contato" class="nav-item">Contato</a></li>
-            </ul>
-
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active  text-light" aria-current="page">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link text-light">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#funciona" class="nav-link text-light">Como Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#materiais" class="nav-link text-light">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#depoimentos" class="nav-link text-light">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link text-light">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link text-light">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -188,15 +209,15 @@
 
                 <div class="card pdf-card">
                     <h3 class="card-title">Exercícios de Escrita - Nível 1</h3>
-                    <p class="card-details">6 páginas • 183 KB</p>
-                    <a href="pdfs/Exercicios de escrita Nivel 1.pdf"
-                        class="btn btn-primary pdf-btn" download>
+                    <p class="card-details">18 páginas • 980 downloads</p>
+                    <a href="pdfs/Exercicios de escrita Nivel 1.pdf" class="btn btn-primary pdf-btn" target="_blank"
+                        download>
                         <i class="icon">⬇️</i> Baixar PDF
                     </a>
                 </div>
                 <div class="card pdf-card">
                     <h3 class="card-title">Alfabeto Ilustrado para Adultos</h3>
-                    <p class="card-details">5 páginas • 185 KB</p>
+                    <p class="card-details">12 páginas • 1.5k downloads</p>
                     <a href="pdfs/Alfabeto para Adultos.pdf" class="btn btn-primary pdf-btn" download>
                         <i class="icon">⬇️</i> Baixar PDF
                     </a>
@@ -527,6 +548,9 @@
     <footer class="rodape">
         <p>&copy; 2025 Futuro Brilhante. Todos os direitos reservados.
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Libras -->
     <div vw class="enabled">

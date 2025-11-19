@@ -7,7 +7,7 @@
     --fundo-claro: #F9F9F9;
     --texto-principal: #333333;
     --borda-clara: #E0E0E0;
-    --tamanho-fonte-base: 1.15rem; /* Acessibilidade para 40+ */
+    --tamanho-fonte-base: 1.15rem; 
 }
 
 /* Reset Básico e Fontes */
@@ -64,6 +64,8 @@ HEADER/NAVEGAÇÃO FIXA E LOGO
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
+
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -72,7 +74,7 @@ HEADER/NAVEGAÇÃO FIXA E LOGO
 }
 
 .logo-link {
-    color: white;
+    color: var(--fundo-claro);
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
@@ -146,7 +148,7 @@ HEADER/NAVEGAÇÃO FIXA E LOGO
         height: auto;
         flex-direction: column; /* Coloca os links em coluna */
         background-color: #fff; /* Fundo do menu */
-        box-shadow: 0 8px 16px rgba(248, 32, 32, 0.1);
+        box-shadow: 0 8px 16px rgba(255, 0, 0, 0.1);
         z-index: 100;
     }
 
@@ -438,7 +440,7 @@ COMO FUNCIONA (Processo)
 
 /* Botão PDF (Azul Escuro) */
 .pdf-btn {
-    background-color: #2c64b6; /* Azul do seu print */
+    background-color: #0066ff; /* Azul do seu print */
     color: white;
     border: none;
 }
