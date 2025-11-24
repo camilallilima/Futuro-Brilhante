@@ -50,6 +50,103 @@ h2 {
     margin: 0 auto;
 }
 
+/* Estilo para centralizar a caixa na página (opcional) */
+.container-mvv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Altura mínima para demonstração. Remova em um layout real */
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f7f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo da caixa principal (box) - Aumentamos a largura máxima */
+.caixa-mvv {
+    width: 100%;
+    max-width: 1000px; /* Aumentado para acomodar 3 colunas */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Título principal */
+.caixa-mvv h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em; /* Levemente maior */
+    font-weight: bold;
+}
+
+/* Separador horizontal */
+.caixa-mvv hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+/* Container Flexbox para alinhar Missão, Visão e Valores lado a lado */
+.conteudo-horizontal {
+    display: flex;
+    gap: 10px; /* Espaço entre as colunas */
+}
+
+/* Estilo para cada item (Missão, Visão, Valores) */
+.item-mvv {
+    flex: 1; /* Faz com que todos os itens ocupem a mesma largura */
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 0; /* Remove a margem vertical desnecessária */
+    text-align: left; /* Alinha o texto dentro da coluna à esquerda */
+}
+
+/* Títulos secundários (Missão, Visão, Valores) */
+.item-mvv h3 {
+    color: #007bff;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Parágrafos de texto */
+.item-mvv p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0; /* Remove o padding extra */
+}
+
+/* Estilo para o texto em negrito nos Valores */
+.item-mvv p strong {
+    color: #333;
+}
+
+/* Adicionando Media Query para dispositivos menores (Móvel) */
+@media (max-width: 768px) {
+    .caixa-mvv {
+        padding: 20px;
+    }
+   
+    /* Quando a tela for pequena, empilha os itens verticalmente */
+    .conteudo-horizontal {
+        flex-direction: column;
+        gap: 15px;
+    }
+   
+    .item-mvv {
+        text-align: center; /* Centraliza o texto no modo móvel */
+    }
+}
+
+
 /* ---------------------------------
 HEADER/NAVEGAÇÃO FIXA E LOGO
 --------------------------------- */
