@@ -50,6 +50,8 @@ h2 {
     margin: 0 auto;
 }
 
+
+
 /* Estilo para centralizar a caixa na página (opcional) */
 .container-mvv {
     display: flex;
@@ -481,7 +483,7 @@ COMO FUNCIONA (Processo)
 
 /* Títulos das Seções */
 .section-title {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
     color: #333;
     border-bottom: 2px solid #eee;
@@ -573,6 +575,7 @@ COMO FUNCIONA (Processo)
         min-width: auto;
     }
 }
+
 
 
 /* ---------------------------------

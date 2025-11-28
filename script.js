@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
     // ---------------------------------
     // 2. CARROSSEL FUNCIONAL BÁSICO
     // ---------------------------------

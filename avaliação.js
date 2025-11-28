@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
             answer: "Lápis"
         },
         {
-            text: "A ____ é amarela e redonda. (Cadeira, Sol, Chuva)",
+            text: "O ____ é amarelo e redondo. (Cadeira, Sol, Chuva)",
             options: ["Cadeira", "Sol", "Chuva"],
             answer: "Sol"
         },
         {
-            text: "Para beber água, usamos o ____. (Pneu, Copo, Janela)",
-            options: ["Copo", "Pneu", "Janela"],
+            text: "Para beber água, usamos o ____. (Pneu, Copo, Ouvido)",
+            options: ["Copo", "Pneu", "Ouvido"],
             answer: "Copo"
         },
         {
