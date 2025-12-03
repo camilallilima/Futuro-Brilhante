@@ -4,191 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuro Brilhante - Área do Aluno</title>
-
-    <!-- Ícones Bootstrap -->
+    <title>Futuro Brilhante </title>
+    <link rel="stylesheet" href="pagina.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-    <style>
-        /* ---------------------- ESTILO GERAL ---------------------- */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Poppins", sans-serif;
-            background: #f0f5ff;
-        }
-
-        /* ---------------------- TOPO ---------------------- */
-        .topo {
-            background: #005ff9;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 600;
-        }
-
-        .menu-btn {
-            font-size: 1.8rem;
-            background: transparent;
-            border: none;
-            color: white;
-            cursor: pointer;
-        }
-
-        /* ---------------------- MENU LATERAL ---------------------- */
-        .menu-lateral {
-            position: fixed;
-            top: 0;
-            left: -260px;
-            width: 240px;
-            height: 100vh;
-            background: #003e9b;
-            color: white;
-            padding-top: 80px;
-            transition: 0.35s ease;
-            box-shadow: 4px 0 10px #00000033;
-        }
-
-        .menu-lateral ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .menu-lateral li {
-            padding: 15px 20px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            border-bottom: 1px solid #ffffff26;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .menu-lateral li:hover {
-            background: #004dcc;
-        }
-
-        /* ---------------------- CONTEÚDO ---------------------- */
-        .conteudo {
-            padding: 25px;
-        }
-
-        h2 {
-            color: #003e9b;
-            margin-bottom: 5px;
-        }
-
-        p {
-            color: #333;
-            margin-bottom: 25px;
-        }
-
-        /* ---------------------- GRID DE CARDS ---------------------- */
-        .grid {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px #00000015;
-            text-align: center;
-            transition: 0.2s;
-            cursor: pointer;
-            text-decoration: none;
-            color: black;
-        }
-
-        .card i {
-            font-size: 2.5rem;
-            color: #005ff9;
-        }
-
-        .card:hover {
-            transform: scale(1.04);
-            box-shadow: 0 6px 18px #00000025;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- ---------------------- TOPO ---------------------- -->
-    <header class="topo">
-        <h1 class="logo">🌟 Futuro Brilhante</h1>
-        <button id="menu-btn" class="menu-btn"><i class="bi bi-list"></i></button>
+    <header>
+        <div class="logo-area">
+            <a href="index.html" class="navbar-brand logo-link" id="logo-link">
+                <img src="img/logo.png" width="60" alt="" class="d-inline-block align-top"> 
+            </a>
+            <h2>Futuro Brilhante</h2>
+        </div>
+
+        <div class="actions">
+            <button id="darkToggle"><i class="bi bi-moon-stars"></i></button>
+            <button id="exit"><i class="bi bi-box-arrow-right"></i></button>
+        </div>
     </header>
 
-    <!-- ---------------------- MENU LATERAL ---------------------- -->
-    <nav id="menu-lateral" class="menu-lateral">
-        <ul>
-            <li><i class="bi bi-people"></i> Comunidade</li>
-            <li><i class="bi bi-person-gear"></i> Ajustar Perfil</li>
-            <li><i class="bi bi-flag"></i> Continuar Missão</li>
-            <li><i class="bi bi-patch-check"></i> Certificados</li>
-            <li><i class="bi bi-book"></i> Biblioteca</li>
-            <li><i class="bi bi-box-arrow-right"></i> Sair</li>
-        </ul>
-    </nav>
+    <div class="container">
 
-    <!-- ---------------------- CONTEÚDO ---------------------- -->
-    <main class="conteudo">
-        <h2>Bem-vindo(a) de volta! 👋</h2>
-        <p>Escolha uma categoria abaixo para continuar sua jornada.</p>
+        <!-- PROGRESSO -->
+        <div class="progresso-box">
+            <h3>📊 Seu Progresso</h3>
+            <div class="barra">
+                <div class="barra-progresso" id="progresso"></div>
+            </div>
+            <p id="textoProgresso">60% concluído</p>
+        </div>
 
+        <!-- CARDS -->
         <div class="grid">
-            <div class="card">
-                <i class="bi bi-people"></i>
+            <div class="card"><i class="bi bi-flag"></i>
+                <h3>Missão</h3>
+                <p>Continue seu aprendizado.</p>
+            </div>
+            <div class="card"><i class="bi bi-people"></i>
                 <h3>Comunidade</h3>
-                <p>Participe de grupos e converse com outros alunos.</p>
+                <p>Converse e compartilhe.</p>
             </div>
-
-            <div class="card">
-                <i class="bi bi-person-gear"></i>
-                <h3>Ajustar Perfil</h3>
-                <p>Atualize seu nome, foto e preferências.</p>
-            </div>
-
-            <div class="card">
-                <i class="bi bi-flag"></i>
-                <h3>Continuar Missão</h3>
-                <p>Volte para suas atividades e progresso atual.</p>
-            </div>
-
-            <div class="card">
-                <i class="bi bi-patch-check"></i>
+            <div class="card"><i class="bi bi-patch-check"></i>
                 <h3>Certificados</h3>
-                <p>Acesse certificados de suas conquistas.</p>
+                <p>Veja suas conquistas.</p>
             </div>
-
-            <div class="card">
-                <i class="bi bi-book"></i>
+            <div class="card"><i class="bi bi-book"></i>
                 <h3>Biblioteca</h3>
-                <p>Materiais extras, livros e conteúdos bônus.</p>
+                <p>Recursos extras.</p>
+            </div>
+            <div class="card"><i class="bi bi-person-gear"></i>
+                <h3>Perfil</h3>
+                <p>Editar conta e avatar.</p>
             </div>
         </div>
-    </main>
+    </div>
 
-    <!-- ---------------------- JAVASCRIPT ---------------------- -->
-    <script>
-        const menu = document.getElementById("menu-lateral");
-        const btn = document.getElementById("menu-btn");
+    <!-- MENU MOBILE -->
+    <div class="menu">
+        <i class="bi bi-house"></i>
+        <i class="bi bi-people"></i>
+        <i class="bi bi-flag"></i>
+        <i class="bi bi-patch-check"></i>
+        <i class="bi bi-gear"></i>
+    </div>
 
-        btn.addEventListener("click", () => {
-            menu.style.left = menu.style.left === "0px" ? "-260px" : "0px";
-        });
-    </script>
+    <!-- ======= Componente: Manutenção (ampulheta girando) ======= -->
+<section id="maintenance" class="maintenance-hidden">
+  <div class="maintenance-backdrop" role="dialog" aria-modal="true" aria-label="Em manutenção">
+    <div class="maintenance-card">
+      <!-- SVG ampulheta animada -->
+      <div class="hourglass-wrap" aria-hidden="true">
+        <svg class="hourglass" viewBox="0 0 100 140" width="120" height="168" xmlns="http://www.w3.org/2000/svg">
+          <!-- superior -->
+          <path class="glass" d="M20 10 H80 L60 40 L60 55 L80 85 H20 L40 55 L40 40 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          <!-- areia superior -->
+          <path class="sand-top" d="M30 25 Q50 15 70 25 Q58 40 42 40 Z" fill="currentColor" opacity="0.85"/>
+          <!-- areia fundo (acumulada) -->
+          <path class="sand-bottom" d="M30 95 Q50 110 70 95 Q58 85 42 85 Z" fill="currentColor" opacity="0.95"/>
+          <!-- fio (areia caindo) -->
+          <rect class="sand-fall" x="48.5" y="50" width="3" height="16" rx="1" fill="currentColor" />
+        </svg>
+      </div>
 
+      <h2 class="maintenance-title">Em manutenção</h2>
+      <p class="maintenance-text">Por favor, volte em breve.</p>
+
+      <button id="maintenance-close" class="maintenance-btn" aria-label="Fechar aviso">Fechar</button>
+    </div>
+  </div>
+</section>
+<!-- ======= FIM componente ======= -->
+
+
+    <script src="pagina.js"></script>
 </body>
 
 </html>
